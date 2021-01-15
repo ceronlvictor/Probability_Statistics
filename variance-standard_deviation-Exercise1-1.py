@@ -5,10 +5,18 @@
     d)Grafica de los datos 
     e)Media Recortada al 20%
     f)Que representa mejor los datos Media muestral o Media Recortada """
+from location_measures import average, mediana
+
 def main(measure):
     return len(measure)
 
 if __name__ == "__main__":
     measure = [3.4, 2.5, 4.8, 2.9, 3.6, 2.8, 3.3, 5.6, 3.7, 2.8, 4.4, 4.0, 5.2, 3.0, 4.8]
     print(f'The measuraments are: {measure}')
+    print(f'The size of the sample is: {main(measure)}')
+    print(f'The average is: {average(measure)}')
+    print(f'The median is: {mediana(measure)}')
+    main(measure)
+    average(measure)
+    mediana(measure)
     main(measure)
