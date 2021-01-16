@@ -5,12 +5,14 @@
     d)Grafica de los datos 
     e)Media Recortada al 20%
     f)Que representa mejor los datos Media muestral o Media Recortada """
+
 from location_measures import average, mediana
 from bokeh.plotting import figure, output_file, show
+
 def grafic(measure):
     output_file = ('variance-standard_deviation-Exercise1.1.html')
     fig = figure()
-
+    
     x_vals = list(measure)
     y_vals = 0
     fig.dot(x_vals, y_vals, size = 20)
