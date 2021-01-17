@@ -16,18 +16,11 @@ def mediana(X):
         return (sorted_List[index] + sorted_List[index + 1]) / 2
 
 def average_recort(X):
-    sorted_List = sorted(X)
+    average_twenty = sum(X)/len(X)
+    return average_twenty
 
-    for _ in X:
-        quantity  = len(sorted_List)
-        if quantity == 15:
-            sorted_List.pop(0)
-        if quantity == 14:
-            sorted_List.pop(1)
-        if quantity == 13:
-            sorted_List.pop(2)
-    return sum(X)/len(X)
-
+def size(X):
+    return len(X)
 
 
 if __name__ == "__main__":
