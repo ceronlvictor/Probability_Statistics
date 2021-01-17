@@ -15,10 +15,10 @@ if __name__ == '__main__':
     control_group = [7, 3, -4, 14, 2, 5, 22, -7, 9, 5]
     treatment_group = [-6, 5, 9, 4, 4, 12, 37, 5, 3, 3]
     print(f'The measuraments of the control group are: {control_group}')
-    print(f'The size of the sample is: {size(control_group)}')
+    print(f'The size of the control group is: {size(control_group)}')
     print(f'The average of the control gruop is: {average(control_group)}')
     print(f'The median of the control group is: {mediana(control_group)}')
     print(f'The measuraments of the treatment group are: {treatment_group}')
-    print(f'The size of the sample is: {size(treatment_group)}')
+    print(f'The size of the the treatment group is: {size(treatment_group)}')
     print(f'The average of the treatment gruop is: {average(treatment_group)}')
     print(f'The median of the treatment group is: {mediana(treatment_group)}')

@@ -16,8 +16,10 @@ def mediana(X):
         return (sorted_List[index] + sorted_List[index + 1]) / 2
 
 def average_recort(X):
-    average_twenty = sum(X)/len(X)
-    return average_twenty
+    X = sorted (X) #Ordenamos el conjunto de datos de menor a mayor 
+    #Necesitamos tomar los datos dependiendo del porcentaje que vamos a eliminar 
+    #Otra alternativa es eliminar los datos extremos
+    return X
 
 def size(X):
     return len(X)
@@ -25,6 +27,7 @@ def size(X):
 
 if __name__ == "__main__":
     X = [3.4, 2.5, 4.8, 2.9, 3.6, 2.8, 3.3, 5.6, 3.7, 2.8, 4.4, 4.0, 5.2, 3.0, 4.8]
+    print(X)
     print(f'The average is: {average(X)}')
     print(f'The median is: {mediana(X)}')
     print(f'THe average recort is {average_recort(X)}')
