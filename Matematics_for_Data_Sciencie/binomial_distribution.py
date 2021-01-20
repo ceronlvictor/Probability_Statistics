@@ -10,10 +10,10 @@ def plot_hist(num_trials): #Función para realizar el experimento aleatorio, deb
     arr.append(binomial(3, 0.5))
   distribucion_simulada = np.unique(arr, return_counts=True)[1]/len(arr)
   distribucion_teorica = [binom(3, 0.5).pmf(k) for k in values]
-  plt.bar(values, distribucion_teorica, label = 'teoría', color = 'red')
-  plt.bar(values, distribucion_simulada, label = 'simulación', alpha = 0.5, color = 'blue')
-  plt.title('simulación con {} experimentos'.format(num_trials))
-  plt.show()
+  #plt.bar(values, distribucion_teorica, label = 'teoría', color = 'red')
+  #plt.bar(values, distribucion_simulada, label = 'simulación', alpha = 0.5, color = 'blue')
+  #plt.title('simulación con {} experimentos'.format(num_trials))
+  #plt.show()
 
 
 
