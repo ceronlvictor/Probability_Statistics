@@ -3,7 +3,8 @@ import math
 import statistics
 
 def average(X):
-    return sum(X)/len(X)
+    averag = sum(X)/len(X)
+    return averag
 
 def mediana(X):
     sorted_List = sorted(X) #Sorted (Ordenar) the measuremens
@@ -14,6 +15,13 @@ def mediana(X):
         return sorted_List[index]
     else:
         return (sorted_List[index] + sorted_List[index + 1]) / 2
+
+def variance(X):
+    n = len(X) 
+    average = sum(X)/n
+    suma = [(x - n)**2 for x in X]
+    sigma  = sum(suma) / n 
+    return  sigma
 
 def average_recort(X):
     X = sorted (X) #Ordenamos el conjunto de datos de menor a mayor 
