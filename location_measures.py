@@ -23,6 +23,15 @@ def variance(X):
     sigma  = sum(suma) / n 
     return  sigma
 
+def standard_deviation(X):
+    n = len(X) 
+    average = sum(X)/n
+    suma = [(x - n)**2 for x in X]
+    sigma  = sum(suma) / n 
+    standard_dev = sigma ** 0.5
+    return standard_dev
+
+
 def average_recort(X):
     X = sorted (X) #Ordenamos el conjunto de datos de menor a mayor 
     #Necesitamos tomar los datos dependiendo del porcentaje que vamos a eliminar 
