@@ -1,4 +1,6 @@
 """Funtion for calculate Media (Average) and the mediana (median)"""
+
+#We need to do it more efficient 
 import math 
 import statistics
 
