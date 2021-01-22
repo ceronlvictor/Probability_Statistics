@@ -2,6 +2,7 @@
 página 13 calcula la varianza de la muestra y la desviación estándar de la muestra.
     a) Varianza de la muestra 
     b) Desviación estandar de la muestra"""
+    
 from location_measures import variance, standard_deviation
 
 if __name__ == "__main__":
