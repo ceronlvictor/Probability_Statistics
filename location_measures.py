@@ -19,19 +19,14 @@ def mediana(X): #Mediana
         return (sorted_List[index] + sorted_List[index + 1]) / 2
 
 def variance(X): #Varianza 
-    n = len(X) 
-    average = sum(X)/n
-    suma = [(x - n)**2 for x in X]
-    sigma  = sum(suma) / n 
-    return  sigma
+    mu = average(X)
+    accumulator = 0
+    for x in X:
+        accumulator += (x - mu)**2
+    return  accumulator / size(X)
 
 def standard_deviation(X): #Desviasción estandar 
-    n = len(X) 
-    average = sum(X)/n
-    suma = [(x - n)**2 for x in X]
-    sigma  = sum(suma) / n 
-    standard_dev = sigma ** 0.5
-    return standard_dev
+    return variance(X)**0.5
 
 
 def average_recort(X):  #Media recortada
@@ -50,6 +45,4 @@ if __name__ == "__main__":
     print(f'The average is: {average(X)}')
     print(f'The median is: {mediana(X)}')
     print(f'The average recort is {average_recort(X)}')
-    average(X)
-    mediana(X)
-    average_recort(X)
+    print(f'The variance is: {variance(X)}')
