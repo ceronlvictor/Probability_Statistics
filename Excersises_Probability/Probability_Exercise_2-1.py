@@ -9,17 +9,34 @@
 def main():
     s_a = []
     x = 0
-    x_b = -200
+    x_b_counter = -200
+    s_b = []
+    s_b = []
+    x_e_counter = -100
+
+    #a)
+
     while x < 51:
         x+=1
         if x % 8 == 0:
             s_a.append(x)
     print(f'The elements of the sample space of the a) are: {s_a}')
 
-    while x_b < 200:
-        x_b += 1
-        if x_b**2 + 4*x_b -5 == 0:
-            print(x_b)
+    #b)
+
+    while x_b_counter < 200:
+        x_b_counter += 1
+
+        if x_b_counter**2 + 4*x_b_counter -5 == 0:
+            s_b.append(x_b_counter)
+    print(f'The elements of the sample space of the b) are: {s_b}')
+
+    #e)
+
+    while  x_e_counter < 50:
+        x_e_counter +=1
+        if 2*x_e_counter -4 >= 0 and x_e_counter < 1:
+            print(x_e_counter)
 
     
 
