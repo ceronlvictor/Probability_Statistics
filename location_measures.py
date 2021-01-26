@@ -35,9 +35,10 @@ def standard_deviation(X): #Desviasción estandar
 def average_recort(X):  #Media recortada
     liminf = scipy.stats.scoreatpercentile(X,20)
     limsup = scipy.stats.scoreatpercentile(X,80)        #Ordenamos el conjunto de datos de menor a mayor 
-    print(f'Limite Inferior {liminf} Limite superior {limsup}')
-    trimean = scipy.stats.mstats.tmean(X,(2.8,5.4))
-    print(f'The recort average is {trimean}')
+    #print(f'Limite Inferior {liminf} Limite superior {limsup}')
+    trimean = scipy.stats.mstats.tmean(X,(liminf,limsup))
+     #print(f'The recort average is {trimean}')
+    return trimean
     #trimean = scipy.stats.mstats.tmean(X,(108.2,136.025)    #Necesitamos tomar los datos dependiendo del porcentaje que vamos a eliminar 
         #Otra alternativa es eliminar los datos extremos
 

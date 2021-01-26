@@ -6,7 +6,7 @@
     e)Media Recortada al 20%
     f)Que representa mejor los datos Media muestral o Media Recortada """
 
-from location_measures import average, mediana
+from location_measures import average, mediana, average_recort
 from bokeh.plotting import figure, output_file, show
 
 def grafic(measure):
@@ -23,12 +23,15 @@ def main(measure):
 
 if __name__ == "__main__":
     measure = [3.4, 2.5, 4.8, 2.9, 3.6, 2.8, 3.3, 5.6, 3.7, 2.8, 4.4, 4.0, 5.2, 3.0, 4.8]
+
     print(f'The measuraments are: {measure}')
+    #a)
     print(f'The size of the sample is: {main(measure)}')
+    #b)
     print(f'The average is: {average(measure)}')
+    #c
     print(f'The median is: {mediana(measure)}')
-    main(measure)
-    average(measure)
-    mediana(measure)
-    main(measure)
+    #d
     grafic(measure)
+    #e
+    print(f"The media recort is: {average_recort(measure)}")
