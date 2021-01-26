@@ -25,3 +25,4 @@ if __name__=='__main__':
     print(f'The standard deviation of the smoking group is: {standard_deviation(smoking_group)}')
     print(f'\n The average of the smoking group is: {average(not_smoking_group)}')
     print(f'The standard deviation of the smoking group is: {standard_deviation(not_smoking_group)}')
+    print('\nParece que el efecto de fumar afecta notablemente al timepo de quedar dormido debido a \nque el promedio del grupo así lo muestra al ser mas grande.')
