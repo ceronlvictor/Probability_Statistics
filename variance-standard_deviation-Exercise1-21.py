@@ -4,6 +4,7 @@
 
     a) Calcula la media y la mediana muestral es de las duraciones de la falla eléctrica 
     b) Calcula la desviación estándar de las duraciones de la falla eléctrica""" 
+    
 from location_measures import average, variance, mediana, standard_deviation
 
 if __name__=="__main__":
